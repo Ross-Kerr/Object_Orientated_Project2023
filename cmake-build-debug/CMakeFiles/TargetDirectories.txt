@@ -1,0 +1,3 @@
+F:/Object-Orientated-Project2023/cmake-build-debug/CMakeFiles/Object_Orientated_Project2023.dir
+F:/Object-Orientated-Project2023/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/Object-Orientated-Project2023/cmake-build-debug/CMakeFiles/rebuild_cache.dir
