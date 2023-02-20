@@ -16,12 +16,13 @@ protected:
                                            "<html lang=\"en\">\n"
                                            "<head>\n"
                                            "    <meta charset=\"UTF-8\">\n"
-                                           "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
-                                           "    <title>Name</title>"
-                                           "</head>"};
+                                           "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
+                                           "    <title>index</title>\n"
+                                           };
 
     inline static std::string_view Stylesheet_{
-            "<link rel=\"stylesheet\" href=\"stylesheet.css\">"
+            "<link rel=\"stylesheet\" href=\"stylesheet.css\">\n"
+            "</head>"
     };
 };
 

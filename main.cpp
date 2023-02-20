@@ -2,11 +2,15 @@
 #include "fileReader.hpp"
 #include "ContactLIst.hpp"
 #include "Contact.hpp"
+#include "Index.hpp"
+#include "Website.hpp"
 
 
 int main() {
 
-    ContactLIst c;
+    Index i;
+    std::cout<<i.to_string();
+
 
     return 0;
 }

@@ -4,14 +4,23 @@
 
 #ifndef OBJECT_ORIENTATED_PROJECT2023_INDEX_HPP
 #define OBJECT_ORIENTATED_PROJECT2023_INDEX_HPP
+#include "Website.hpp"
+#include "Contact.hpp"
 
-
-class Index {
+class Index: public Website{
 public:
     Index();
+    std::string to_string() override;
 
-    virtual ~Index();
 
+
+private:
+    std::string Derived_Header_;
+    std::string Derived_Stylesheet_;
+    std::string htmlHeader;
+    std::string htmlBody;
+    std::string generatePageHeader();
+    std::string generatePageBody();
 };
 
 
