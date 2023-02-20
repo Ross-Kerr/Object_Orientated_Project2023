@@ -14,16 +14,17 @@ Index::Index()
 }
 std::string Index::generatePageHeader(){
 
-
+//  create a html header tag using the header_ and styelsheet_ from website class appended together.
 
     htmlHeader.append(Derived_Header_).append(Derived_Stylesheet_);
+// return new completed html header
 
     return htmlHeader;
 }
 
 std::string Index::generatePageBody(){
 
-
+//  create body tag
 
     htmlBody.append("<body><header>Home Page</header>\n"
                     "<ol>\n"
@@ -34,6 +35,8 @@ std::string Index::generatePageBody(){
 
 
                     "</body>\n");
+
+//    Return completed html body
 
     return htmlBody;
 }
