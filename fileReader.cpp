@@ -31,12 +31,11 @@ void fileReader::readFile() {
 //  For loop together with get line function to read the file line by line
     for(std::string myText; getline(inFile,myText);){
 //  Output the text from the file to show the file has been read correctly
-//        cout << myText;
+
 
     fileContents.push_back(myText);
    }
-//  Close the file
-//    inFile.close();
+
 
 }
 

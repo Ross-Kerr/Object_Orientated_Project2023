@@ -7,21 +7,22 @@
 #include <string>
 
 class Website {
-//public:
-//    Website() = default;
-//    virtual std::string to_string() = 0;
-//
-//protected:
-//    inline static std::string_view Header_{"<!DOCTYPE html>\n"
-//                                           "<html lang=\"en\">\n"
-//                                           "<head>\n"
-//                                           "    <meta charset=\"UTF-8\">\n"
-//                                           "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
-//                                           "    <title>Name</title>"
-//                                           "</head>"};
+public:
+    Website() = default;
+    virtual std::string to_string() = 0;
 
+protected:
+    inline static std::string_view Header_{"<!DOCTYPE html>\n"
+                                           "<html lang=\"en\">\n"
+                                           "<head>\n"
+                                           "    <meta charset=\"UTF-8\">\n"
+                                           "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+                                           "    <title>Name</title>"
+                                           "</head>"};
 
-
+    inline static std::string_view Stylesheet_{
+            "<link rel=\"stylesheet\" href=\"stylesheet.css\">"
+    };
 };
 
 
