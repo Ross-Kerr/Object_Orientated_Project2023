@@ -4,12 +4,12 @@
 #include "Contact.hpp"
 #include "Index.hpp"
 #include "Website.hpp"
-
+#include "CSS.hpp"
 
 int main() {
 
-    Index i;
-    std::cout<<i.to_string();
+    CSS c;
+    std::cout<<c.generateCSS();
 
 
     return 0;
