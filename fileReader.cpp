@@ -24,7 +24,7 @@ void fileReader::readFile() {
 //  Open the file stream and loop to check if file was opened
    inFile.open("contacts.txt");
    if (!inFile){
-       cout<<"Unable to open file";
+       cout<<"Unable to open file. Please check file location";
        exit(1); // Terminate with error
    }
 
