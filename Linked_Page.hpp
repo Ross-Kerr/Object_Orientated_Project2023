@@ -4,9 +4,21 @@
 
 #ifndef OBJECT_ORIENTATED_PROJECT2023_LINKED_PAGE_HPP
 #define OBJECT_ORIENTATED_PROJECT2023_LINKED_PAGE_HPP
+#include "Website.hpp"
 
 
-class Linked_Page {
+class Linked_Page: public Website{
+public:
+    Linked_Page();
+    std::string to_string() override;
+
+private:
+    std::string Derived_Header_;
+    std::string Derived_Stylesheet_;
+    std::string htmlHeader;
+    std::string htmlBody;
+    std::string generateLinkedPageHeader();
+    std::string generateLinkedPageBody();
 
 };
 

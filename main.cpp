@@ -5,11 +5,12 @@
 #include "Index.hpp"
 #include "Website.hpp"
 #include "CSS.hpp"
+#include "Linked_Page.hpp"
 
 int main() {
 
-    CSS c;
-    std::cout<<c.generateCSS();
+    Linked_Page p;
+    std::cout<<p.to_string();
 
 
     return 0;
