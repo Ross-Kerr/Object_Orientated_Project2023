@@ -8,28 +8,44 @@
 #include "Linked_Page.hpp"
 #include <vector>
 #include <regex>
+#include "Element.hpp"
 namespace Testing{
 
-    int testLinkedPage(){
+    void testLinkedPage(){
         Linked_Page p;
         std::cout<<p.to_string();
+
     }
 
-    int testIndexPage(){
+    void testIndexPage(){
         Index i;
         std::cout<<i.to_string();
+
     }
 
-    int testCSS(){
+    void testCSS(){
         CSS c;
-        std::cout<<c.generateCSS();
+        c.generateCSS();
+
     }
+
+    void ElementTest();
+    Element e ("p");
+    e.addAttribute("Class", "container");
+    e.addAttribute("id", "test");
+    e.addContent("test");
+
+    std::cout << e.toString() << e.getEndTag();
 
 
 }
 int main() {
 
-    std::cout<<Testing::testCSS;
+//    std::cout<<Testing::testCSS;
+//    std::cout<<Testing::testIndexPage;
+//    std::cout<<Testing::testLinkedPage;
+
+
 
 
 

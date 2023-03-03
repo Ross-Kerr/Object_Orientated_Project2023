@@ -15,7 +15,9 @@ public:
     Element(std::string e);
     std::string toString();
 
-    std::string addAttribute(std::string aName, std::string aValue);
+    void addAttribute(std::string aName, std::string aValue);
+    std::string addContent(std::string content);
+    std::string getEndTag();
 
 private:
     std::string e_;
@@ -23,9 +25,9 @@ private:
     std::string htmlTag = "";
     std::string content_;
 
-    std::string addContent(std::string content);
 
-    std::string getEndTag();
+
+
 };
 
 

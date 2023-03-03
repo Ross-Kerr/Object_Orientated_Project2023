@@ -8,7 +8,7 @@ Element::Element(std::string e) :e_{e} {
 
 }
 
-std::string Element::addAttribute(std::string aName, std::string aValue){
+void Element::addAttribute(std::string aName, std::string aValue){
     class Attribute a(aName, aValue);
     Attribute.push_back(a);
 
