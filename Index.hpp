@@ -6,6 +6,8 @@
 #define OBJECT_ORIENTATED_PROJECT2023_INDEX_HPP
 #include "Website.hpp"
 #include "Contact.hpp"
+#include "ContactLIst.hpp"
+#include "Element.hpp"
 
 class Index: public Website{
 public:

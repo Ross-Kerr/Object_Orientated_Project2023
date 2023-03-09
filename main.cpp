@@ -29,13 +29,13 @@ namespace Testing{
 
     }
 
-    void ElementTest();
-    Element e ("p");
-    e.addAttribute("Class", "container");
-    e.addAttribute("id", "test");
-    e.addContent("test");
+//    void ElementTest();
+//    Element e("p");
+//    e.addAttribute("Class", "container");
+//    e.addAttribute("id", "test");
+//    e.addContent("test");
 
-    std::cout << e.toString() << e.getEndTag();
+
 
 
 }
@@ -44,7 +44,13 @@ int main() {
 //    std::cout<<Testing::testCSS;
 //    std::cout<<Testing::testIndexPage;
 //    std::cout<<Testing::testLinkedPage;
+    Element e("p");
+    e.addAttribute("Class", "container");
+    e.addAttribute("id", "test");
+    e.addContent("test");
 
+
+    std::cout<<e.toString();
 
 
 

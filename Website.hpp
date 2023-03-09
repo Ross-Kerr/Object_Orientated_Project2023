@@ -6,6 +6,7 @@
 #define OBJECT_ORIENTATED_PROJECT2023_WEBSITE_HPP
 #include <string>
 
+
 class Website {
 public:
     Website() = default;
@@ -17,7 +18,7 @@ protected:
                                            "<head>\n"
                                            "    <meta charset=\"UTF-8\">\n"
                                            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
-                                           "    <title>index</title>\n"
+                                           "    <title>Home Page</title>\n"
                                            };
 
     inline static std::string_view Stylesheet_{

@@ -11,6 +11,7 @@
 class ContactLIst {
 public:
     ContactLIst();
+    std::vector<Contact> returnContactVector();
 
 private:
     std::vector<Contact> ContactVector;

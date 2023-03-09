@@ -15,3 +15,7 @@ ContactLIst::ContactLIst() {
         ContactVector.push_back(c);
     }
 }
+
+std::vector<Contact> ContactLIst::returnContactVector(){
+    return ContactVector;
+}

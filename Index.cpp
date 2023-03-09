@@ -11,10 +11,16 @@ Index::Index()
     Derived_Stylesheet_ = Stylesheet_;
     std::string htmlHeader = "";
     std::string htmlBody = "";
+    generatePageHeader();
+    generatePageBody();
+    to_string();
+
+
+
 }
 std::string Index::generatePageHeader(){
 
-//  create a html header tag using the header_ and styelsheet_ from website class appended together.
+//  create a html header tag using the header_ and stylesheet_ from website class appended together.
 
     htmlHeader.append(Derived_Header_).append(Derived_Stylesheet_);
 // return new completed html header
@@ -24,17 +30,66 @@ std::string Index::generatePageHeader(){
 
 std::string Index::generatePageBody(){
 
+    ContactLIst c;
+    Element body ("body");
+    Element header("header");
+    Element orderedList("ol");
+    Element list("li");
+    Element anchor("a");
+
+
 //  create body tag
+    htmlBody.append(body.toString()).append("\n");
 
-    htmlBody.append("<body><header>Home Page</header>\n"
-                    "<ol>\n"
-                    "<li><a href=\"#\">Link 1</a></li>\n"
-                    "<li><a href=\"#\">Link 2</a></li>\n"
-                    "</ol>\n"
+//    Create header tag and fill content
+                    htmlBody.append(header.addContent("Home Page")).append(header.toString()).append("\n");
 
 
+//    End header tag
+                    htmlBody.append(header.getEndTag()).append("\n");
 
-                    "</body>\n");
+//    Create Ordered list tag
+
+                    htmlBody.append(orderedList.toString()).append("\n");
+
+//    Begin loop to create listed contacts
+                    for (auto& Contact: c.returnContactVector()) {
+                        Contact.returnFirstName();
+                        Contact.returnLastName();
+
+
+                        htmlBody.append(list.toString()).append("\n");
+                //  add anchor tag for the links and loop through list of contacts
+
+
+                        htmlBody.append(anchor.addAttribute("href",Contact.returnFirstName().append(" ").append(Contact.returnLastName().append(".html"))));
+                        htmlBody.append(anchor.addContent(Contact.returnFirstName().append(" ").append(Contact.returnLastName()))).append("\n");
+
+                //  Close anchor tag
+                        htmlBody.append(anchor.getEndTag()).append("\n");
+
+                //  Close list tag
+                        htmlBody.append(list.getEndTag()).append("\n");
+
+                //   End for loop
+                    }
+//  End ordered list
+                    htmlBody.append(orderedList.getEndTag()).append("\n");
+                //  End body tag
+                    htmlBody.append(body.getEndTag()).append("\n");
+
+
+
+
+//    "<body><header>Home Page</header>\n"
+//                    "<ol>\n"
+//                    "<li><a href=\"#\">Link 1</a></li>\n"
+//                    "<li><a href=\"#\">Link 2</a></li>\n"
+//                    "</ol>\n"
+//
+//
+//
+//                    "</body>\n");
 
 //    Return completed html body
 
