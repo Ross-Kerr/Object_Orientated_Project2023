@@ -5,6 +5,9 @@
 #ifndef OBJECT_ORIENTATED_PROJECT2023_LINKED_PAGE_HPP
 #define OBJECT_ORIENTATED_PROJECT2023_LINKED_PAGE_HPP
 #include "Website.hpp"
+#include "Element.hpp"
+#include "ContactLIst.hpp"
+#include "Contact.hpp"
 
 
 class Linked_Page: public Website{

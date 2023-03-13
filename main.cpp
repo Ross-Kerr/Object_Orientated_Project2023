@@ -44,13 +44,8 @@ int main() {
 //    std::cout<<Testing::testCSS;
 //    std::cout<<Testing::testIndexPage;
 //    std::cout<<Testing::testLinkedPage;
-    Element e("p");
-    e.addAttribute("Class", "container");
-    e.addAttribute("id", "test");
-    e.addContent("test");
-
-
-    std::cout<<e.toString();
+    Linked_Page p;
+    std::cout<<p.to_string();
 
 
 

@@ -23,17 +23,63 @@ std::string Linked_Page::generateLinkedPageHeader(){
 
 std::string Linked_Page::generateLinkedPageBody(){
 
-//  create body tag
+    ContactLIst c;
+    Element body ("body");
+    Element header("header");
+    Element orderedList("ol");
+    Element list("li");
+    Element anchor("a");
 
-    htmlBody.append("<body><header>Linked Page</header>\n"
-                    "<ol>\n"
-                    "<li>ID</li>\n"
-                    "<li>Name</li>\n"
-                    "<li>Email</li>\n"
-                    "<li>Country</li>\n"
-                    "</ol>\n"
-                    "<a href=\"index.html\">Home Page</a>\n"
-                    "</body>\n");
+
+
+    //  create body tag
+    htmlBody.append(body.toString()).append("\n");
+
+//    Create header tag and fill content
+    htmlBody.append(header.addContent("Home Page")).append(header.toString()).append("\n");
+
+//    End header tag
+    htmlBody.append(header.getEndTag()).append("\n");
+
+//    Create Ordered list tag
+
+    htmlBody.append(orderedList.toString()).append("\n");
+
+//    Create List tag and fill with details
+    for(auto& Contact: c.returnContactVector()) {
+
+        Contact.returnFirstName();
+        Contact.returnLastName();
+        Contact.returnCountry();
+        Contact.returnEmail();
+
+        htmlBody.append(list.toString()).append(list.addContent(Contact.returnFirstName()+ " " + Contact.returnLastName()))
+        .append(list.getEndTag()).append("\n");
+
+        htmlBody.append(list.toString()).append(list.addContent(Contact.returnEmail()))
+        .append(list.getEndTag()).append("\n");
+
+        htmlBody.append(list.toString()).append(list.addContent(Contact.returnCountry()))
+        .append(list.getEndTag()).append("\n");
+
+    }
+
+    htmlBody.append(orderedList.getEndTag()).append("\n");
+
+    htmlBody.append(anchor.toString());
+    htmlBody.append(anchor.addContent("<a href=\"index.html\">"));
+    htmlBody.append(anchor.addContent("Home Page")).append(anchor.getEndTag()).append("\n");
+
+    htmlBody.append(body.getEndTag());
+//
+//    htmlBody.append("<body><header>Linked Page</header>\n"
+//                    "<ol>\n"
+//                    "<li>Name</li>\n"
+//                    "<li>Email</li>\n"
+//                    "<li>Country</li>\n"
+//                    "</ol>\n"
+//                    "<a href=\"index.html\">Home Page</a>\n"
+//                    "</body>\n");
 
 //    Return completed html body
 

@@ -17,6 +17,8 @@ Index::Index()
 
 
 
+
+
 }
 std::string Index::generatePageHeader(){
 
@@ -52,24 +54,32 @@ std::string Index::generatePageBody(){
 
                     htmlBody.append(orderedList.toString()).append("\n");
 
+
 //    Begin loop to create listed contacts
-                    for (auto& Contact: c.returnContactVector()) {
+                    for(auto& Contact: c.returnContactVector()) {
+
                         Contact.returnFirstName();
                         Contact.returnLastName();
+                        Element list("li");
+                        Element anchor("a");
 
 
-                        htmlBody.append(list.toString()).append("\n");
                 //  add anchor tag for the links and loop through list of contacts
 
-
-                        htmlBody.append(anchor.addAttribute("href",Contact.returnFirstName().append(" ").append(Contact.returnLastName().append(".html"))));
-                        htmlBody.append(anchor.addContent(Contact.returnFirstName().append(" ").append(Contact.returnLastName()))).append("\n");
+                        htmlBody.append(list.toString());
+                        htmlBody.append(anchor.addContent("<a href=\"").append(Contact.returnFirstName()))
+                        .append(Contact.returnLastName()).append(".html\">");
+                        htmlBody.append(anchor.addContent(Contact.returnFirstName().append(" ")
+                        .append(Contact.returnLastName())));
 
                 //  Close anchor tag
-                        htmlBody.append(anchor.getEndTag()).append("\n");
+                        htmlBody.append(anchor.getEndTag());
 
                 //  Close list tag
                         htmlBody.append(list.getEndTag()).append("\n");
+
+
+
 
                 //   End for loop
                     }
@@ -79,18 +89,6 @@ std::string Index::generatePageBody(){
                     htmlBody.append(body.getEndTag()).append("\n");
 
 
-
-
-//    "<body><header>Home Page</header>\n"
-//                    "<ol>\n"
-//                    "<li><a href=\"#\">Link 1</a></li>\n"
-//                    "<li><a href=\"#\">Link 2</a></li>\n"
-//                    "</ol>\n"
-//
-//
-//
-//                    "</body>\n");
-
 //    Return completed html body
 
     return htmlBody;
@@ -99,7 +97,7 @@ std::string Index::to_string(){
     generatePageHeader();
     generatePageBody();
 
-    return htmlHeader.append(htmlBody);;
+    return htmlHeader.append(htmlBody);
 }
 
 

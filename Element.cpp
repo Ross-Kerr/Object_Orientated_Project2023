@@ -12,6 +12,7 @@ void Element::addAttribute(std::string aName, std::string aValue){
     class Attribute a(aName, aValue);
     Attribute.push_back(a);
 
+
 }
 
 std::string Element::toString() {
