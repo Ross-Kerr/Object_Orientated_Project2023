@@ -27,25 +27,31 @@ namespace Testing{
         CSS c;
         c.generateCSS();
 
+
     }
 
-//    void ElementTest();
-//    Element e("p");
-//    e.addAttribute("Class", "container");
-//    e.addAttribute("id", "test");
-//    e.addContent("test");
+    void ElementTest() {
 
+        Element e("p");
+        e.addAttribute("Class", "container");
+        e.addAttribute("id", "test");
+        e.addContent("test");
+        std::cout<<e.toString()<<e.getEndTag();
+
+    }
 
 
 
 }
 int main() {
 
-//    std::cout<<Testing::testCSS;
-//    std::cout<<Testing::testIndexPage;
-//    std::cout<<Testing::testLinkedPage;
-    Linked_Page p;
-    std::cout<<p.to_string();
+//        Testing::testCSS();
+        Testing::testIndexPage();
+//        Testing::testLinkedPage();
+//        Testing::ElementTest();
+
+
+
 
 
 

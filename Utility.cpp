@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 
-VS tokenize( std::string &s ){
+VS Utility::tokenize( std::string &s ){
 
     auto const re = std::regex{R"(,+)"};
     auto const vec = VS(
@@ -13,3 +13,8 @@ VS tokenize( std::string &s ){
     );
     return vec ;
 }
+
+void Utility::toDisk(std::string fileName, std::string html) {
+//ofstream to disk here
+}
+

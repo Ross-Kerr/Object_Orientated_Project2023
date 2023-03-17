@@ -5,6 +5,7 @@
 #ifndef OBJECT_ORIENTATED_PROJECT2023_CSS_HPP
 #define OBJECT_ORIENTATED_PROJECT2023_CSS_HPP
 #include <string>
+#include "Utility.hpp"
 
 class CSS {
 public:

@@ -46,7 +46,13 @@ std::string CSS::generateCSS(){
                 "li a {\n"
                 "margin-right: 10px;\n"
                 "}\n"
+
+
+
     );
+
+    Utility u;
+    u.toDisk("Style.css", CSS_);
 
     return CSS_;
 }

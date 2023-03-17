@@ -9,9 +9,10 @@
 
 ContactLIst::ContactLIst() {
     fileReader f;
+    Utility u;
     f.readFile();
     for (auto e : f.getContent()){
-        Contact c (tokenize(e));
+        Contact c (u.tokenize(e));
         ContactVector.push_back(c);
     }
 }

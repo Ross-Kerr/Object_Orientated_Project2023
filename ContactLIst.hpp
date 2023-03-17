@@ -6,6 +6,7 @@
 #define OBJECT_ORIENTATED_PROJECT2023_CONTACTLIST_HPP
 #include "Contact.hpp"
 #include <vector>
+#include "Utility.hpp"
 
 
 class ContactLIst {

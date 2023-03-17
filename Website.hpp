@@ -22,7 +22,7 @@ protected:
                                            };
 
     inline static std::string_view Stylesheet_{
-            "<link rel=\"stylesheet\" href=\"stylesheet.css\">\n"
+            "<link rel=\"stylesheet\" href=\"Style.css\">\n"
             "</head>"
     };
 };

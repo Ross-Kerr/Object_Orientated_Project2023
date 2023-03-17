@@ -8,6 +8,7 @@
 #include "Contact.hpp"
 #include "ContactLIst.hpp"
 #include "Element.hpp"
+#include "Utility.hpp"
 
 class Index: public Website{
 public:

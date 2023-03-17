@@ -35,6 +35,7 @@ std::string Index::generatePageBody(){
     ContactLIst c;
     Element body ("body");
     Element header("header");
+    header.addContent("Home Page");
     Element orderedList("ol");
     Element list("li");
     Element anchor("a");
@@ -44,11 +45,7 @@ std::string Index::generatePageBody(){
     htmlBody.append(body.toString()).append("\n");
 
 //    Create header tag and fill content
-                    htmlBody.append(header.addContent("Home Page")).append(header.toString()).append("\n");
-
-
-//    End header tag
-                    htmlBody.append(header.getEndTag()).append("\n");
+                    htmlBody.append(header.toString()).append(header.getEndTag()).append("\n");
 
 //    Create Ordered list tag
 
@@ -62,13 +59,13 @@ std::string Index::generatePageBody(){
                         Contact.returnLastName();
                         Element list("li");
                         Element anchor("a");
+                        anchor.addAttribute("href", Contact.returnFirstName().append(Contact.returnLastName().append(".html")));
 
 
                 //  add anchor tag for the links and loop through list of contacts
 
                         htmlBody.append(list.toString());
-                        htmlBody.append(anchor.addContent("<a href=\"").append(Contact.returnFirstName()))
-                        .append(Contact.returnLastName()).append(".html\">");
+                        htmlBody.append(anchor.toString().append(anchor.getEndTag()));
                         htmlBody.append(anchor.addContent(Contact.returnFirstName().append(" ")
                         .append(Contact.returnLastName())));
 
@@ -87,6 +84,8 @@ std::string Index::generatePageBody(){
                     htmlBody.append(orderedList.getEndTag()).append("\n");
                 //  End body tag
                     htmlBody.append(body.getEndTag()).append("\n");
+//                    Utility u;
+//                    u.toDisk("index.html", )
 
 
 //    Return completed html body
