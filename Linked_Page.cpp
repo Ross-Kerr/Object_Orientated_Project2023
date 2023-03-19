@@ -29,6 +29,8 @@ std::string Linked_Page::generateLinkedPageBody(){
     Element orderedList("ol");
     Element list("li");
     Element anchor("a");
+    anchor.addAttribute("href","index.html");
+    anchor.addContent("Home Page");
 
 
 
@@ -36,7 +38,7 @@ std::string Linked_Page::generateLinkedPageBody(){
     htmlBody.append(body.toString()).append("\n");
 
 //    Create header tag and fill content
-    htmlBody.append(header.addContent("Home Page")).append(header.toString()).append("\n");
+    htmlBody.append(header.addContent("Contact Details")).append(header.toString()).append("\n");
 
 //    End header tag
     htmlBody.append(header.getEndTag()).append("\n");
@@ -52,23 +54,25 @@ std::string Linked_Page::generateLinkedPageBody(){
         Contact.returnLastName();
         Contact.returnCountry();
         Contact.returnEmail();
+        Element list("li");
+        Element listEmail("li");
+        Element listCountry("li");
 
         htmlBody.append(list.toString()).append(list.addContent(Contact.returnFirstName()+ " " + Contact.returnLastName()))
         .append(list.getEndTag()).append("\n");
 
-        htmlBody.append(list.toString()).append(list.addContent(Contact.returnEmail()))
-        .append(list.getEndTag()).append("\n");
+        htmlBody.append(listEmail.toString()).append(listEmail.addContent(Contact.returnEmail()))
+        .append(listEmail.getEndTag()).append("\n");
 
-        htmlBody.append(list.toString()).append(list.addContent(Contact.returnCountry()))
-        .append(list.getEndTag()).append("\n");
+        htmlBody.append(listCountry.toString()).append(listCountry.addContent(Contact.returnCountry()))
+        .append(listCountry.getEndTag()).append("\n");
 
     }
 
     htmlBody.append(orderedList.getEndTag()).append("\n");
 
     htmlBody.append(anchor.toString());
-    htmlBody.append(anchor.addContent("<a href=\"index.html\">"));
-    htmlBody.append(anchor.addContent("Home Page")).append(anchor.getEndTag()).append("\n");
+    htmlBody.append(anchor.getEndTag()).append("\n");
 
     htmlBody.append(body.getEndTag());
 //

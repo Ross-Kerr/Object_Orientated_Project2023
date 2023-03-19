@@ -11,6 +11,7 @@ Index::Index()
     Derived_Stylesheet_ = Stylesheet_;
     std::string htmlHeader = "";
     std::string htmlBody = "";
+    std::string HTML ="";
     generatePageHeader();
     generatePageBody();
     to_string();
@@ -80,12 +81,11 @@ std::string Index::generatePageBody(){
 
                 //   End for loop
                     }
-//  End ordered list
+
+                    //  End ordered list
                     htmlBody.append(orderedList.getEndTag()).append("\n");
                 //  End body tag
                     htmlBody.append(body.getEndTag()).append("\n");
-//                    Utility u;
-//                    u.toDisk("index.html", )
 
 
 //    Return completed html body
@@ -96,7 +96,7 @@ std::string Index::to_string(){
     generatePageHeader();
     generatePageBody();
 
-    return htmlHeader.append(htmlBody);
+    return HTML.append(htmlHeader.append(htmlBody));
 }
 
 

@@ -22,8 +22,10 @@ private:
     std::string Derived_Stylesheet_;
     std::string htmlHeader;
     std::string htmlBody;
+    std::string HTML;
     std::string generatePageHeader();
     std::string generatePageBody();
+
 };
 
 

@@ -46,8 +46,8 @@ namespace Testing{
 int main() {
 
 //        Testing::testCSS();
-        Testing::testIndexPage();
-//        Testing::testLinkedPage();
+//        Testing::testIndexPage();
+        Testing::testLinkedPage();
 //        Testing::ElementTest();
 
 
