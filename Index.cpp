@@ -2,19 +2,19 @@
 // Created by rossk on 23/01/2023.
 //
 
-#include <iostream>
 #include "Index.hpp"
+#include <iostream>
 
 Index::Index()
 {
     Derived_Header_ = Header_;
     Derived_Stylesheet_ = Stylesheet_;
-    std::string htmlHeader = "";
-    std::string htmlBody = "";
-    std::string HTML ="";
+    htmlHeader = "";
+    htmlBody = "";
+    HTML ="";
     generatePageHeader();
     generatePageBody();
-    to_string();
+
 
 
 
@@ -38,8 +38,8 @@ std::string Index::generatePageBody(){
     Element header("header");
     header.addContent("Home Page");
     Element orderedList("ol");
-    Element list("li");
-    Element anchor("a");
+
+
 
 
 //  create body tag
@@ -52,40 +52,47 @@ std::string Index::generatePageBody(){
 
                     htmlBody.append(orderedList.toString()).append("\n");
 
+//                    Counter for Debugging
+//                    unsigned counter = 0;
 
 //    Begin loop to create listed contacts
                     for(auto& Contact: c.returnContactVector()) {
 
-                        Contact.returnFirstName();
-                        Contact.returnLastName();
+
+//                        Contact.returnFirstName();
+//                        Contact.returnLastName();
                         Element list("li");
                         Element anchor("a");
-                        anchor.addAttribute("href", Contact.returnFirstName().append(Contact.returnLastName().append(".html")));
+                        anchor.addAttribute("href",
+                                            Contact.returnFirstName().append(Contact.returnLastName().append(".html")));
 
 
-                //  add anchor tag for the links and loop through list of contacts
+                        //  add anchor tag for the links and loop through list of contacts
 
                         htmlBody.append(list.toString());
                         htmlBody.append(anchor.toString().append(anchor.getEndTag()));
                         htmlBody.append(anchor.addContent(Contact.returnFirstName().append(" ")
-                        .append(Contact.returnLastName())));
+                                                                  .append(Contact.returnLastName())));
 
-                //  Close anchor tag
+                        //  Close anchor tag
                         htmlBody.append(anchor.getEndTag());
 
-                //  Close list tag
+                        //  Close list tag
                         htmlBody.append(list.getEndTag()).append("\n");
 
-
-
-
-                //   End for loop
+//                      Counter for Debugging
+//                      counter++;
+                        //   End for loop
                     }
 
-                    //  End ordered list
-                    htmlBody.append(orderedList.getEndTag()).append("\n");
-                //  End body tag
-                    htmlBody.append(body.getEndTag()).append("\n");
+//                    Counter for debugging
+//    std::cout<<"Counter for loop: "<< counter;
+
+    //  End ordered list
+    htmlBody.append(orderedList.getEndTag()).append("\n");
+
+    //  End body tag
+    htmlBody.append(body.getEndTag()).append("\n");
 
 
 //    Return completed html body
@@ -93,10 +100,11 @@ std::string Index::generatePageBody(){
     return htmlBody;
 }
 std::string Index::to_string(){
-    generatePageHeader();
-    generatePageBody();
 
-    return HTML.append(htmlHeader.append(htmlBody));
+    HTML= htmlHeader.append(htmlBody);
+
+
+    return HTML;
 }
 
 

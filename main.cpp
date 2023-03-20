@@ -1,13 +1,8 @@
 #include <iostream>
-#include "fileReader.hpp"
-#include "ContactLIst.hpp"
-#include "Contact.hpp"
 #include "Index.hpp"
 #include "Website.hpp"
 #include "CSS.hpp"
 #include "Linked_Page.hpp"
-#include <vector>
-#include <regex>
 #include "Element.hpp"
 namespace Testing{
 
@@ -19,7 +14,8 @@ namespace Testing{
 
     void testIndexPage(){
         Index i;
-        std::cout<<i.to_string();
+        Utility u;
+        u.toDisk("index.html",i.to_string());
 
     }
 
@@ -46,15 +42,9 @@ namespace Testing{
 int main() {
 
 //        Testing::testCSS();
-//        Testing::testIndexPage();
-        Testing::testLinkedPage();
+        Testing::testIndexPage();
+//        Testing::testLinkedPage();
 //        Testing::ElementTest();
-
-
-
-
-
-
 
     return 0;
 }

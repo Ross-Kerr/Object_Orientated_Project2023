@@ -2,6 +2,8 @@
 #include "Utility.hpp"
 #include <regex>
 #include <iostream>
+#include <filesystem>
+#include <fstream>
 #include <vector>
 
 VS Utility::tokenize( std::string &s ){
@@ -15,6 +17,18 @@ VS Utility::tokenize( std::string &s ){
 }
 
 void Utility::toDisk(std::string fileName, std::string html) {
-//ofstream to disk here
+    const std::filesystem::directory_entry d{"C:\\Users\\rossk\\OneDrive\\Documents\\HND Year 2\\Contact Project Website"};
+    std::filesystem::path path_ { d };
+
+    path_.append(fileName);
+    std::cout << "Write file to: " << path_ << "\n";
+
+    std::ofstream ofs;
+    ofs.open(path_, std::ofstream::out);
+    ofs << html;
+    ofs.close();
+
+
+
 }
 
