@@ -9,6 +9,10 @@ Linked_Page::Linked_Page() {
     Derived_Stylesheet_ = Stylesheet_;
     htmlHeader = "";
     htmlBody = "";
+    HTML = "";
+
+    generateLinkedPageHeader();
+    generateLinkedPageBody();
 }
 
 std::string Linked_Page::generateLinkedPageHeader(){
@@ -23,8 +27,7 @@ std::string Linked_Page::generateLinkedPageHeader(){
 
 std::string Linked_Page::generateLinkedPageBody(){
 
-    std::filesystem::directory_entry d{"C:\\Users\\rossk\\OneDrive\\Documents\\HND Year 2\\Contact Project Website"};
-    std::filesystem::path path_ { d };
+
 
 
 
@@ -48,6 +51,8 @@ std::string Linked_Page::generateLinkedPageBody(){
         Element list("li");
         Element listEmail("li");
         Element listCountry("li");
+
+        htmlBody.append(htmlHeader).append("\n");
 
         //  create body tag
         htmlBody.append(body.toString()).append("\n");
@@ -85,14 +90,38 @@ std::string Linked_Page::generateLinkedPageBody(){
 //    Close the body tag
         htmlBody.append(body.getEndTag());
 
+        Utility u;
+
+        u.toDisk(Contact.returnFirstName().append(Contact.returnLastName().append(".html")),htmlBody);
+        htmlBody.clear();
+
 //  close the For loop
     }
 
     return htmlBody;
 }
-std::string Linked_Page::to_string(){
-    generateLinkedPageHeader();
-    generateLinkedPageBody();
+void Linked_Page::addParagraph(std::string fileName, std::string paragraph) {
+    Element p("p");
+    p.addContent(paragraph);
 
-    return htmlHeader.append(htmlBody);
+    std::ifstream Linked_pageFile("F:\\Stefans Project\\"+fileName.append(".html"));
+    std::string file;
+    std::string line;
+
+    while (std::getline(Linked_pageFile,line)){
+        file.append(line);
+    }
+
+    auto it = file.find("</header>");
+    file.insert(it, p.toString().append(p.getEndTag()));
+
+    Utility u;
+    u.toDisk(fileName,file);
+
+}
+std::string Linked_Page::to_string(){
+
+
+    HTML= htmlHeader.append(htmlBody);
+    return HTML;
 }

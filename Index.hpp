@@ -14,6 +14,7 @@ class Index: public Website{
 public:
     Index();
     std::string to_string() override;
+    void addParagraph(std::string fileName, std::string paragraph);
 
 
 
@@ -25,6 +26,7 @@ private:
     std::string HTML;
     std::string generatePageHeader();
     std::string generatePageBody();
+
 
 };
 

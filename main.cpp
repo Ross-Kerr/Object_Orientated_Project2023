@@ -8,7 +8,8 @@ namespace Testing{
 
     void testLinkedPage(){
         Linked_Page p;
-        std::cout<<p.to_string();
+        p.addParagraph("PatricioBigmore", "A Paragraph would go here!");
+
 
     }
 
@@ -16,6 +17,7 @@ namespace Testing{
         Index i;
         Utility u;
         u.toDisk("index.html",i.to_string());
+        i.addParagraph("index", "A Paragraph would go here!");
 
     }
 
@@ -41,9 +43,9 @@ namespace Testing{
 }
 int main() {
 
-//        Testing::testCSS();
+        Testing::testCSS();
         Testing::testIndexPage();
-//        Testing::testLinkedPage();
+        Testing::testLinkedPage();
 //        Testing::ElementTest();
 
     return 0;

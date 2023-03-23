@@ -4,6 +4,8 @@
 
 #include "Index.hpp"
 #include <iostream>
+#include <fstream>
+#include <algorithm>
 
 Index::Index()
 {
@@ -65,14 +67,15 @@ std::string Index::generatePageBody(){
                         Element anchor("a");
                         anchor.addAttribute("href",
                                             Contact.returnFirstName().append(Contact.returnLastName().append(".html")));
+                        anchor.addContent(Contact.returnFirstName().append(" ")
+                                                  .append(Contact.returnLastName()));
 
 
                         //  add anchor tag for the links and loop through list of contacts
 
                         htmlBody.append(list.toString());
-                        htmlBody.append(anchor.toString().append(anchor.getEndTag()));
-                        htmlBody.append(anchor.addContent(Contact.returnFirstName().append(" ")
-                                                                  .append(Contact.returnLastName())));
+                        htmlBody.append(anchor.toString());
+
 
                         //  Close anchor tag
                         htmlBody.append(anchor.getEndTag());
@@ -99,9 +102,28 @@ std::string Index::generatePageBody(){
 
     return htmlBody;
 }
-std::string Index::to_string(){
+void Index::addParagraph(std::string fileName, std::string paragraph) {
+    Element p("p");
+    p.addContent(paragraph);
 
-    HTML= htmlHeader.append(htmlBody);
+    std::ifstream indexFile("F:\\Stefans Project\\"+fileName.append(".html"));
+    std::string file;
+    std::string line;
+
+    while (std::getline(indexFile,line)){
+        file.append(line);
+    }
+
+    auto it = file.find("</header>");
+    file.insert(it, p.toString().append(p.getEndTag()));
+
+    Utility u;
+    u.toDisk(fileName,file);
+
+}
+std::string Index::to_string() {
+
+    HTML = htmlHeader.append(htmlBody);
 
 
     return HTML;

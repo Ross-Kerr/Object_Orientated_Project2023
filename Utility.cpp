@@ -17,7 +17,7 @@ VS Utility::tokenize( std::string &s ){
 }
 
 void Utility::toDisk(std::string fileName, std::string html) {
-    const std::filesystem::directory_entry d{"C:\\Users\\rossk\\OneDrive\\Documents\\HND Year 2\\Contact Project Website"};
+    const std::filesystem::directory_entry d{"F:\\Stefans Project\\"};
     std::filesystem::path path_ { d };
 
     path_.append(fileName);

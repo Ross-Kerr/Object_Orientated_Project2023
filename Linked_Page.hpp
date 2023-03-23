@@ -9,18 +9,21 @@
 #include "ContactLIst.hpp"
 #include "Contact.hpp"
 #include <filesystem>
-
+#include <algorithm>
+#include <fstream>
 
 class Linked_Page: public Website{
 public:
     Linked_Page();
     std::string to_string() override;
+    void addParagraph(std::string fileName, std::string paragraph);
 
 private:
     std::string Derived_Header_;
     std::string Derived_Stylesheet_;
     std::string htmlHeader;
     std::string htmlBody;
+    std::string HTML;
     std::string generateLinkedPageHeader();
     std::string generateLinkedPageBody();
 
