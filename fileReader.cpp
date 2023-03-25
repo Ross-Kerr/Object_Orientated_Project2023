@@ -26,6 +26,8 @@ void fileReader::readFile() {
    if (!inFile){
        cout<<"Unable to open file. Please check file location";
        exit(1); // Terminate with error
+   } else {
+       cout<<"File Read Successfully";
    }
 
 //  For loop together with get line function to read the file line by line

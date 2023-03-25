@@ -4,6 +4,9 @@
 #include "CSS.hpp"
 #include "Linked_Page.hpp"
 #include "Element.hpp"
+#include "fileReader.hpp"
+#include "ContactLIst.hpp"
+#include "Contact.hpp"
 namespace Testing{
 
     void testLinkedPage(){
@@ -38,15 +41,35 @@ namespace Testing{
 
     }
 
+    void UseCaseOne(){
+        fileReader f;
+        f.readFile();
+
+    }
+    void UseCaseTwo(){
+        ContactLIst Cl;
+
+    }
+    void UseCaseThree(){
+//        Contact c;
+
+    }
+    void UseCaseFour(){
+        Index i;
+        i.to_string();
+    }
+
 
 
 }
 int main() {
 
-        Testing::testCSS();
-        Testing::testIndexPage();
-        Testing::testLinkedPage();
+//        Testing::testCSS();
+//        Testing::testIndexPage();
+//        Testing::testLinkedPage();
 //        Testing::ElementTest();
+//        Testing::UseCaseOne();
+        Testing::UseCaseTwo();
 
     return 0;
 }
