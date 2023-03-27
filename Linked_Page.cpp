@@ -10,6 +10,7 @@ Linked_Page::Linked_Page() {
     htmlHeader = "";
     htmlBody = "";
     HTML = "";
+    bodyhtml ="";
 
     generateLinkedPageHeader();
     generateLinkedPageBody();
@@ -93,18 +94,22 @@ std::string Linked_Page::generateLinkedPageBody(){
         Utility u;
 
         u.toDisk(Contact.returnFirstName().append(Contact.returnLastName().append(".html")),htmlBody);
+
+        bodyhtml = std::move(htmlBody);
+
         htmlBody.clear();
+
 
 //  close the For loop
     }
 
-    return htmlBody;
+    return bodyhtml;
 }
 void Linked_Page::addParagraph(std::string fileName, std::string paragraph) {
     Element p("p");
     p.addContent(paragraph);
 
-    std::ifstream Linked_pageFile("F:\\Stefans Project\\"+fileName.append(".html"));
+    std::ifstream Linked_pageFile("C:\\Users\\rossk\\OneDrive\\Documents\\HND Year 2\\Contact Project Website\\"+fileName.append(".html"));
     std::string file;
     std::string line;
 
@@ -122,6 +127,6 @@ void Linked_Page::addParagraph(std::string fileName, std::string paragraph) {
 std::string Linked_Page::to_string(){
 
 
-    HTML= htmlHeader.append(htmlBody);
+    HTML= htmlHeader.append(bodyhtml);
     return HTML;
 }

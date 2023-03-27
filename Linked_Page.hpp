@@ -24,6 +24,7 @@ private:
     std::string htmlHeader;
     std::string htmlBody;
     std::string HTML;
+    std::string bodyhtml;
     std::string generateLinkedPageHeader();
     std::string generateLinkedPageBody();
 

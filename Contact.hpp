@@ -11,6 +11,7 @@
 class Contact {
 public:
     Contact(std::vector<std::string> ContactVector);
+    std::string returnID();
     std::string returnFirstName();
     std::string returnLastName();
     std::string returnEmail();
