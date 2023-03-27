@@ -16,6 +16,12 @@ public:
     std::string returnLastName();
     std::string returnEmail();
     std::string returnCountry();
+    bool operator==( const unsigned& s ) const {
+        return ( id == std::to_string(s) )  ;
+
+    }
+
+
 
 private:
 

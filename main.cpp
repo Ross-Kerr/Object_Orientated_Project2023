@@ -53,14 +53,8 @@ namespace Testing{
     void UseCaseThree(){
         // Iterate through the vector and print the contact information for each contact
         ContactLIst cl;
-        for ( auto& Contact : cl.returnContactVector()) {
-            std::cout << "Contact ID: " << Contact.returnID() << std::endl;
-            std::cout << "First Name: " << Contact.returnFirstName() << std::endl;
-            std::cout << "Last Name: " << Contact.returnLastName() << std::endl;
-            std::cout << "Country: " << Contact.returnCountry() << std::endl;
-            std::cout << "Email: " << Contact.returnEmail() << std::endl;
-            std::cout << std::endl; // add a blank line between contacts for readability
-        }
+        std::cout<<cl.findAndDisplay("80");
+
     } //Use Case Passed
 
     void UseCaseFour(){
@@ -84,8 +78,6 @@ namespace Testing{
         std::cout<<e.toString()<<e.getEndTag();
         std::cout<<("\n");
         std::cout<<a.toString()<<a.getEndTag();
-
-
     } //Use Case Passed
 
     void UseCaseSix(){
@@ -111,6 +103,17 @@ namespace Testing{
 
     } //Use Case Passed
 
+    void RunAllUseCases(){
+        UseCaseOne();
+        UseCaseTwo();
+        UseCaseThree();
+        UseCaseFour();
+        UseCaseFive();
+        UseCaseSix();
+        UseCaseSeven();
+        UseCaseEight();
+    }
+
 
 
 
@@ -124,10 +127,10 @@ int main() {
 //        Testing::ElementTest();
 //        Testing::UseCaseOne();
 //        Testing::UseCaseTwo();
-//        Testing::UseCaseThree();
+        Testing::UseCaseThree();
 //        Testing::UseCaseFour();
 //        Testing::UseCaseFive();
-        Testing::UseCaseSix();
+//        Testing::UseCaseSix();
 //        Testing::UseCaseSeven();
 //        Testing::UseCaseEight();
 
