@@ -1,10 +1,10 @@
 #include <iostream>
-#include "Index.hpp"
-#include "Website.hpp"
-#include "CSS.hpp"
-#include "Linked_Page.hpp"
-#include "Element.hpp"
-#include "fileReader.hpp"
+#include "project_lib/Index.hpp"
+#include "project_lib/Website.hpp"
+#include "project_lib/CSS.hpp"
+#include "project_lib/Linked_Page.hpp"
+#include "project_lib/Element.hpp"
+#include "project_lib/fileReader.hpp"
 namespace Testing{
 
     void testLinkedPage(){
@@ -118,6 +118,8 @@ namespace Testing{
 
 
 
+
+
 }
 int main() {
 
@@ -132,8 +134,8 @@ int main() {
 //        Testing::UseCaseFive();
 //        Testing::UseCaseSix();
 //        Testing::UseCaseSeven();
-//        Testing::UseCaseEight();
-        Testing::RunAllUseCases();
+        Testing::UseCaseEight();
+//        Testing::RunAllUseCases();
 
     return 0;
 }

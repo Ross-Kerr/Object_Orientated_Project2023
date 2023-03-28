@@ -41,115 +41,41 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = F$:/Object-Orientated-Project2023/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Object_Orientated_Project2023
+# Object build statements for EXECUTABLE target Object_Orientated_Project2023_run
 
 
 #############################################
-# Order-only phony target for Object_Orientated_Project2023
+# Order-only phony target for Object_Orientated_Project2023_run
 
-build cmake_object_order_depends_target_Object_Orientated_Project2023: phony || CMakeFiles/Object_Orientated_Project2023.dir
+build cmake_object_order_depends_target_Object_Orientated_Project2023_run: phony || cmake_object_order_depends_target_project_lib
 
-build CMakeFiles/Object_Orientated_Project2023.dir/main.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/main.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\main.cpp.obj.d
+build CMakeFiles/Object_Orientated_Project2023_run.dir/main.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_run_Debug F$:/Object-Orientated-Project2023/main.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023_run
+  DEP_FILE = CMakeFiles\Object_Orientated_Project2023_run.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/fileReader.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/fileReader.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\fileReader.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/Contact.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/Contact.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\Contact.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/HTML.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/HTML.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\HTML.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/CSS.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/CSS.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\CSS.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/Attribute.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/Attribute.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\Attribute.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/Element.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/Element.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\Element.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/Button.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/Button.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\Button.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/Linked_Page.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/Linked_Page.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\Linked_Page.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/Page.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/Page.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\Page.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/Index.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/Index.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\Index.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/Website.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/Website.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\Website.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/Utility.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/Utility.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\Utility.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-
-build CMakeFiles/Object_Orientated_Project2023.dir/ContactLIst.cpp.obj: CXX_COMPILER__Object_Orientated_Project2023_Debug F$:/Object-Orientated-Project2023/ContactLIst.cpp || cmake_object_order_depends_target_Object_Orientated_Project2023
-  DEP_FILE = CMakeFiles\Object_Orientated_Project2023.dir\ContactLIst.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
-  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023.dir
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023_run.dir
+  OBJECT_FILE_DIR = CMakeFiles\Object_Orientated_Project2023_run.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Object_Orientated_Project2023_run.dir\
+  TARGET_PDB = Object_Orientated_Project2023_run.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Object_Orientated_Project2023
+# Link build statements for EXECUTABLE target Object_Orientated_Project2023_run
 
 
 #############################################
-# Link the executable Object_Orientated_Project2023.exe
+# Link the executable Object_Orientated_Project2023_run.exe
 
-build Object_Orientated_Project2023.exe: CXX_EXECUTABLE_LINKER__Object_Orientated_Project2023_Debug CMakeFiles/Object_Orientated_Project2023.dir/main.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/fileReader.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/Contact.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/HTML.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/CSS.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/Attribute.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/Element.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/Button.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/Linked_Page.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/Page.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/Index.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/Website.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/Utility.cpp.obj CMakeFiles/Object_Orientated_Project2023.dir/ContactLIst.cpp.obj
+build Object_Orientated_Project2023_run.exe: CXX_EXECUTABLE_LINKER__Object_Orientated_Project2023_run_Debug CMakeFiles/Object_Orientated_Project2023_run.dir/main.cpp.obj | project_lib/libproject_lib.a || project_lib/libproject_lib.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023.dir
+  LINK_LIBRARIES = project_lib/libproject_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Object_Orientated_Project2023_run.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Object_Orientated_Project2023.exe
-  TARGET_IMPLIB = libObject_Orientated_Project2023.dll.a
-  TARGET_PDB = Object_Orientated_Project2023.exe.dbg
+  TARGET_COMPILE_PDB = CMakeFiles\Object_Orientated_Project2023_run.dir\
+  TARGET_FILE = Object_Orientated_Project2023_run.exe
+  TARGET_IMPLIB = libObject_Orientated_Project2023_run.dll.a
+  TARGET_PDB = Object_Orientated_Project2023_run.pdb
 
 
 #############################################
@@ -175,9 +101,226 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# F:/Object-Orientated-Project2023/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target project_lib
+
+
+#############################################
+# Order-only phony target for project_lib
+
+build cmake_object_order_depends_target_project_lib: phony || project_lib/CMakeFiles/project_lib.dir
+
+build project_lib/CMakeFiles/project_lib.dir/Attribute.cpp.obj: CXX_COMPILER__project_lib_Debug F$:/Object-Orientated-Project2023/project_lib/Attribute.cpp || cmake_object_order_depends_target_project_lib
+  DEP_FILE = project_lib\CMakeFiles\project_lib.dir\Attribute.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = project_lib\CMakeFiles\project_lib.dir
+  OBJECT_FILE_DIR = project_lib\CMakeFiles\project_lib.dir
+  TARGET_COMPILE_PDB = project_lib\CMakeFiles\project_lib.dir\project_lib.pdb
+  TARGET_PDB = project_lib\libproject_lib.pdb
+
+build project_lib/CMakeFiles/project_lib.dir/Contact.cpp.obj: CXX_COMPILER__project_lib_Debug F$:/Object-Orientated-Project2023/project_lib/Contact.cpp || cmake_object_order_depends_target_project_lib
+  DEP_FILE = project_lib\CMakeFiles\project_lib.dir\Contact.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = project_lib\CMakeFiles\project_lib.dir
+  OBJECT_FILE_DIR = project_lib\CMakeFiles\project_lib.dir
+  TARGET_COMPILE_PDB = project_lib\CMakeFiles\project_lib.dir\project_lib.pdb
+  TARGET_PDB = project_lib\libproject_lib.pdb
+
+build project_lib/CMakeFiles/project_lib.dir/ContactLIst.cpp.obj: CXX_COMPILER__project_lib_Debug F$:/Object-Orientated-Project2023/project_lib/ContactLIst.cpp || cmake_object_order_depends_target_project_lib
+  DEP_FILE = project_lib\CMakeFiles\project_lib.dir\ContactLIst.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = project_lib\CMakeFiles\project_lib.dir
+  OBJECT_FILE_DIR = project_lib\CMakeFiles\project_lib.dir
+  TARGET_COMPILE_PDB = project_lib\CMakeFiles\project_lib.dir\project_lib.pdb
+  TARGET_PDB = project_lib\libproject_lib.pdb
+
+build project_lib/CMakeFiles/project_lib.dir/CSS.cpp.obj: CXX_COMPILER__project_lib_Debug F$:/Object-Orientated-Project2023/project_lib/CSS.cpp || cmake_object_order_depends_target_project_lib
+  DEP_FILE = project_lib\CMakeFiles\project_lib.dir\CSS.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = project_lib\CMakeFiles\project_lib.dir
+  OBJECT_FILE_DIR = project_lib\CMakeFiles\project_lib.dir
+  TARGET_COMPILE_PDB = project_lib\CMakeFiles\project_lib.dir\project_lib.pdb
+  TARGET_PDB = project_lib\libproject_lib.pdb
+
+build project_lib/CMakeFiles/project_lib.dir/Element.cpp.obj: CXX_COMPILER__project_lib_Debug F$:/Object-Orientated-Project2023/project_lib/Element.cpp || cmake_object_order_depends_target_project_lib
+  DEP_FILE = project_lib\CMakeFiles\project_lib.dir\Element.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = project_lib\CMakeFiles\project_lib.dir
+  OBJECT_FILE_DIR = project_lib\CMakeFiles\project_lib.dir
+  TARGET_COMPILE_PDB = project_lib\CMakeFiles\project_lib.dir\project_lib.pdb
+  TARGET_PDB = project_lib\libproject_lib.pdb
+
+build project_lib/CMakeFiles/project_lib.dir/fileReader.cpp.obj: CXX_COMPILER__project_lib_Debug F$:/Object-Orientated-Project2023/project_lib/fileReader.cpp || cmake_object_order_depends_target_project_lib
+  DEP_FILE = project_lib\CMakeFiles\project_lib.dir\fileReader.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = project_lib\CMakeFiles\project_lib.dir
+  OBJECT_FILE_DIR = project_lib\CMakeFiles\project_lib.dir
+  TARGET_COMPILE_PDB = project_lib\CMakeFiles\project_lib.dir\project_lib.pdb
+  TARGET_PDB = project_lib\libproject_lib.pdb
+
+build project_lib/CMakeFiles/project_lib.dir/Index.cpp.obj: CXX_COMPILER__project_lib_Debug F$:/Object-Orientated-Project2023/project_lib/Index.cpp || cmake_object_order_depends_target_project_lib
+  DEP_FILE = project_lib\CMakeFiles\project_lib.dir\Index.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = project_lib\CMakeFiles\project_lib.dir
+  OBJECT_FILE_DIR = project_lib\CMakeFiles\project_lib.dir
+  TARGET_COMPILE_PDB = project_lib\CMakeFiles\project_lib.dir\project_lib.pdb
+  TARGET_PDB = project_lib\libproject_lib.pdb
+
+build project_lib/CMakeFiles/project_lib.dir/Linked_Page.cpp.obj: CXX_COMPILER__project_lib_Debug F$:/Object-Orientated-Project2023/project_lib/Linked_Page.cpp || cmake_object_order_depends_target_project_lib
+  DEP_FILE = project_lib\CMakeFiles\project_lib.dir\Linked_Page.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = project_lib\CMakeFiles\project_lib.dir
+  OBJECT_FILE_DIR = project_lib\CMakeFiles\project_lib.dir
+  TARGET_COMPILE_PDB = project_lib\CMakeFiles\project_lib.dir\project_lib.pdb
+  TARGET_PDB = project_lib\libproject_lib.pdb
+
+build project_lib/CMakeFiles/project_lib.dir/Utility.cpp.obj: CXX_COMPILER__project_lib_Debug F$:/Object-Orientated-Project2023/project_lib/Utility.cpp || cmake_object_order_depends_target_project_lib
+  DEP_FILE = project_lib\CMakeFiles\project_lib.dir\Utility.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = project_lib\CMakeFiles\project_lib.dir
+  OBJECT_FILE_DIR = project_lib\CMakeFiles\project_lib.dir
+  TARGET_COMPILE_PDB = project_lib\CMakeFiles\project_lib.dir\project_lib.pdb
+  TARGET_PDB = project_lib\libproject_lib.pdb
+
+build project_lib/CMakeFiles/project_lib.dir/Website.cpp.obj: CXX_COMPILER__project_lib_Debug F$:/Object-Orientated-Project2023/project_lib/Website.cpp || cmake_object_order_depends_target_project_lib
+  DEP_FILE = project_lib\CMakeFiles\project_lib.dir\Website.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = project_lib\CMakeFiles\project_lib.dir
+  OBJECT_FILE_DIR = project_lib\CMakeFiles\project_lib.dir
+  TARGET_COMPILE_PDB = project_lib\CMakeFiles\project_lib.dir\project_lib.pdb
+  TARGET_PDB = project_lib\libproject_lib.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target project_lib
+
+
+#############################################
+# Link the static library project_lib\libproject_lib.a
+
+build project_lib/libproject_lib.a: CXX_STATIC_LIBRARY_LINKER__project_lib_Debug project_lib/CMakeFiles/project_lib.dir/Attribute.cpp.obj project_lib/CMakeFiles/project_lib.dir/Contact.cpp.obj project_lib/CMakeFiles/project_lib.dir/ContactLIst.cpp.obj project_lib/CMakeFiles/project_lib.dir/CSS.cpp.obj project_lib/CMakeFiles/project_lib.dir/Element.cpp.obj project_lib/CMakeFiles/project_lib.dir/fileReader.cpp.obj project_lib/CMakeFiles/project_lib.dir/Index.cpp.obj project_lib/CMakeFiles/project_lib.dir/Linked_Page.cpp.obj project_lib/CMakeFiles/project_lib.dir/Utility.cpp.obj project_lib/CMakeFiles/project_lib.dir/Website.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = project_lib\CMakeFiles\project_lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = project_lib\CMakeFiles\project_lib.dir\project_lib.pdb
+  TARGET_FILE = project_lib\libproject_lib.a
+  TARGET_PDB = project_lib\libproject_lib.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build project_lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D F:\Object-Orientated-Project2023\cmake-build-debug\project_lib && "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build project_lib/edit_cache: phony project_lib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build project_lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D F:\Object-Orientated-Project2023\cmake-build-debug\project_lib && "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SF:\Object-Orientated-Project2023 -BF:\Object-Orientated-Project2023\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build project_lib/rebuild_cache: phony project_lib/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# F:/Object-Orientated-Project2023/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target doctest_tests_run
+
+
+#############################################
+# Order-only phony target for doctest_tests_run
+
+build cmake_object_order_depends_target_doctest_tests_run: phony || cmake_object_order_depends_target_project_lib
+
+build doctest_tests/CMakeFiles/doctest_tests_run.dir/UnitTest.cpp.obj: CXX_COMPILER__doctest_tests_run_Debug F$:/Object-Orientated-Project2023/doctest_tests/UnitTest.cpp || cmake_object_order_depends_target_doctest_tests_run
+  DEP_FILE = doctest_tests\CMakeFiles\doctest_tests_run.dir\UnitTest.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  INCLUDES = -IF:/Object-Orientated-Project2023/project_lib
+  OBJECT_DIR = doctest_tests\CMakeFiles\doctest_tests_run.dir
+  OBJECT_FILE_DIR = doctest_tests\CMakeFiles\doctest_tests_run.dir
+  TARGET_COMPILE_PDB = doctest_tests\CMakeFiles\doctest_tests_run.dir\
+  TARGET_PDB = doctest_tests\doctest_tests_run.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target doctest_tests_run
+
+
+#############################################
+# Link the executable doctest_tests\doctest_tests_run.exe
+
+build doctest_tests/doctest_tests_run.exe: CXX_EXECUTABLE_LINKER__doctest_tests_run_Debug doctest_tests/CMakeFiles/doctest_tests_run.dir/UnitTest.cpp.obj | project_lib/libproject_lib.a || project_lib/libproject_lib.a
+  FLAGS = -g
+  LINK_LIBRARIES = project_lib/libproject_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = doctest_tests\CMakeFiles\doctest_tests_run.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = doctest_tests\CMakeFiles\doctest_tests_run.dir\
+  TARGET_FILE = doctest_tests\doctest_tests_run.exe
+  TARGET_IMPLIB = doctest_tests\libdoctest_tests_run.dll.a
+  TARGET_PDB = doctest_tests\doctest_tests_run.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build doctest_tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D F:\Object-Orientated-Project2023\cmake-build-debug\doctest_tests && "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build doctest_tests/edit_cache: phony doctest_tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build doctest_tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D F:\Object-Orientated-Project2023\cmake-build-debug\doctest_tests && "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SF:\Object-Orientated-Project2023 -BF:\Object-Orientated-Project2023\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build doctest_tests/rebuild_cache: phony doctest_tests/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
-build Object_Orientated_Project2023: phony Object_Orientated_Project2023.exe
+build Object_Orientated_Project2023_run: phony Object_Orientated_Project2023_run.exe
+
+build doctest_tests_run: phony doctest_tests/doctest_tests_run.exe
+
+build doctest_tests_run.exe: phony doctest_tests/doctest_tests_run.exe
+
+build libproject_lib.a: phony project_lib/libproject_lib.a
+
+build project_lib: phony project_lib/libproject_lib.a
 
 # =============================================================================
 # Folder targets.
@@ -187,7 +330,21 @@ build Object_Orientated_Project2023: phony Object_Orientated_Project2023.exe
 #############################################
 # Folder: F:/Object-Orientated-Project2023/cmake-build-debug
 
-build all: phony Object_Orientated_Project2023.exe
+build all: phony Object_Orientated_Project2023_run.exe project_lib/all doctest_tests/all
+
+# =============================================================================
+
+#############################################
+# Folder: F:/Object-Orientated-Project2023/cmake-build-debug/doctest_tests
+
+build doctest_tests/all: phony doctest_tests/doctest_tests_run.exe
+
+# =============================================================================
+
+#############################################
+# Folder: F:/Object-Orientated-Project2023/cmake-build-debug/project_lib
+
+build project_lib/all: phony project_lib/libproject_lib.a
 
 # =============================================================================
 # Built-in targets
@@ -196,14 +353,14 @@ build all: phony Object_Orientated_Project2023.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake F$:/Object-Orientated-Project2023/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake F$:/Object-Orientated-Project2023/CMakeLists.txt F$:/Object-Orientated-Project2023/doctest_tests/CMakeLists.txt F$:/Object-Orientated-Project2023/project_lib/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake F$:/Object-Orientated-Project2023/CMakeLists.txt: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake F$:/Object-Orientated-Project2023/CMakeLists.txt F$:/Object-Orientated-Project2023/doctest_tests/CMakeLists.txt F$:/Object-Orientated-Project2023/project_lib/CMakeLists.txt: phony
 
 
 #############################################
