@@ -15,6 +15,10 @@ Contact::Contact(std::vector<std::string> ContactVector) {
 
 }
 
+std::string Contact::returnID(){
+    return id;
+}
+
 std::string Contact::returnFirstName(){
     return firstName;
 }
@@ -30,6 +34,7 @@ std::string Contact::returnEmail(){
 std::string Contact::returnCountry(){
     return country;
 }
+
 
 
 

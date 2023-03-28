@@ -13,6 +13,7 @@ class ContactLIst {
 public:
     ContactLIst();
     std::vector<Contact> returnContactVector();
+    std::string findAndDisplay(std::basic_string<char> ID);
 
 private:
     std::vector<Contact> ContactVector;

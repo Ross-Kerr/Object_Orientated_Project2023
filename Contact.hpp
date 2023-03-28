@@ -11,10 +11,17 @@
 class Contact {
 public:
     Contact(std::vector<std::string> ContactVector);
+    std::string returnID();
     std::string returnFirstName();
     std::string returnLastName();
     std::string returnEmail();
     std::string returnCountry();
+    bool operator==( const unsigned& s ) const {
+        return ( id == std::to_string(s) )  ;
+
+    }
+
+
 
 private:
 

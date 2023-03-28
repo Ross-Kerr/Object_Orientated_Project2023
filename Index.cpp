@@ -61,8 +61,7 @@ std::string Index::generatePageBody(){
                     for(auto& Contact: c.returnContactVector()) {
 
 
-//                        Contact.returnFirstName();
-//                        Contact.returnLastName();
+
                         Element list("li");
                         Element anchor("a");
                         anchor.addAttribute("href",
@@ -106,7 +105,7 @@ void Index::addParagraph(std::string fileName, std::string paragraph) {
     Element p("p");
     p.addContent(paragraph);
 
-    std::ifstream indexFile("F:\\Stefans Project\\"+fileName.append(".html"));
+    std::ifstream indexFile("C:\\Users\\rossk\\OneDrive\\Documents\\HND Year 2\\Contact Project Website\\"+fileName.append(".html"));
     std::string file;
     std::string line;
 
