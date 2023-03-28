@@ -127,12 +127,13 @@ int main() {
 //        Testing::ElementTest();
 //        Testing::UseCaseOne();
 //        Testing::UseCaseTwo();
-        Testing::UseCaseThree();
+//        Testing::UseCaseThree();
 //        Testing::UseCaseFour();
 //        Testing::UseCaseFive();
 //        Testing::UseCaseSix();
 //        Testing::UseCaseSeven();
 //        Testing::UseCaseEight();
+        Testing::RunAllUseCases();
 
     return 0;
 }
